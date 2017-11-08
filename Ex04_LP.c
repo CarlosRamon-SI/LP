@@ -1,5 +1,5 @@
 /*
- * Ex05_LP.c
+ * Ex04_LP.c
  * 
  * Copyright 2017 Aluno <aluno@estacao>
  * 
@@ -24,21 +24,19 @@
 
 #include <stdio.h>
 
-int main(int argc, char **argv)
-{
-	float horas = 0, salario = 0, iR = 0;
+int main(int argc, char **argv){
+	int ano = 0;
+	float zero = 0, cem = 0;
 	
-	printf("Digite o numero de horas trabalhadas: \n");
-	scanf("%f", &horas);
-	salario = horas * 19.50;
-	if (salario > 1500.00) {
-		iR = (salario * 0.1);
-		salario -= iR;
-		printf("O valor do salario Bruto é: R$ %.2f \n", salario+iR);
-		printf("O valor do Imposto de Renda deduzido foi: R$ %.2f \n", iR);
-		printf("O valor liguido do salario é: R$ %.2f", salario);
-	} else
-		printf("O valor do salario liquido é: R$ %.2f \n", salario);
+	printf("Digite um ano qualquer \n");
+	scanf("%d", &ano);
 	
+	zero = ano % 4;
+	cem = ano % 100;
+	
+	if ((zero == 0) && (cem != 0))
+		printf("Ano Bisexto");
+	else
+		printf("Ano Comum");
 }
 

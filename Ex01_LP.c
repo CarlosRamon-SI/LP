@@ -1,5 +1,5 @@
 /*
- * Ex05_LP.c
+ * HelloWorld.c
  * 
  * Copyright 2017 Aluno <aluno@estacao>
  * 
@@ -24,21 +24,10 @@
 
 #include <stdio.h>
 
-int main(int argc, char **argv)
-{
-	float horas = 0, salario = 0, iR = 0;
-	
-	printf("Digite o numero de horas trabalhadas: \n");
-	scanf("%f", &horas);
-	salario = horas * 19.50;
-	if (salario > 1500.00) {
-		iR = (salario * 0.1);
-		salario -= iR;
-		printf("O valor do salario Bruto é: R$ %.2f \n", salario+iR);
-		printf("O valor do Imposto de Renda deduzido foi: R$ %.2f \n", iR);
-		printf("O valor liguido do salario é: R$ %.2f", salario);
-	} else
-		printf("O valor do salario liquido é: R$ %.2f \n", salario);
-	
+int main(int argc, char **argv) {
+	char ch;
+	ch = getchar();
+	if (ch == 'p')
+		printf("você pressionou a tecla p \n");
 }
 
