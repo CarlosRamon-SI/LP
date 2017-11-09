@@ -5,6 +5,6 @@ int main(){
     printf("Digite um valor maior que ZERO.");
     scanf("%d",&count);
     for (int i = 0; i <= count; i++) {
-      printf("%d",i); 
+      printf("%d\n",i); 
     }
 }
