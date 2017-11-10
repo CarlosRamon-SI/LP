@@ -1,3 +1,7 @@
+" ==================================================================================
+" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" ==================================================================================
+
 " this is to receive CTRL-S and CTRL-Q
 silent !stty -ixon > /dev/null 2>/dev/null
 
@@ -87,6 +91,29 @@ set textwidth=120
 
 " show column number
 set ruler
+
+" ======================================================== 
+"                   colorscheme
+" ========================================================
+"
+" colorscheme blue.vim
+" colorscheme darkblue.vim
+" colorscheme default.vim
+" colorscheme delek.vim
+" colorscheme desert.vim
+" colorscheme elflord.vim
+" colorscheme evening.vim
+" colorscheme koehler.vim
+" colorscheme morning.vim
+" colorscheme murphy.vim
+" colorscheme pablo.vim
+" colorscheme peachpuff.vim
+" colorscheme ron.vim
+" colorscheme shine.vim
+" colorscheme slate.vim
+" colorscheme torte.vim
+" colorscheme zellner.vim
+colorscheme termschool.vim
 
 " turn syntax highlighting on
 syntax on
