@@ -54,6 +54,8 @@ Plugin 'vim-scripts/Conque-GDB'
 
 Plugin 'vim-airline/vim-airline'
 
+Plugin 'marcopaganini/termschool-vim-theme'
+
 " end of Vundle initialization
 call vundle#end()
 filetype plugin indent on
