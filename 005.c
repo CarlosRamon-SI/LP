@@ -10,7 +10,7 @@ int main(){
         vet[i] = 0;
     }
     while (resp == 0){
-        printf("\nDigite um valor [%d/100]: ",i+1);
+        printf("Digite um valor [%d/100]: ",i+1);
         scanf("%d",&aux);
         if (aux < 0) {
             if (aux == -1) {
@@ -52,7 +52,7 @@ int main(){
         }
     }
     if (ch3 == 0) {
-        printf("\nNão existe a sequencia 1, 3 e 4 neste vetor.");
+        printf("\nNão existe a sequencia 1, 3 e 4 neste vetor.\n");
     } else {
         printf("\nNessa sequência existem %d vezes que aparecem 1, 3 e 4 (nessa ordem).\n",ch3);
     }
