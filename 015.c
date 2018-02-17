@@ -15,10 +15,10 @@ typedef struct TProd {
 
 void attPreco();
 void ordProd();
-void printList();
+void printList(TProd prod);
 
 int main(){
-    TProd *pAux;
+    char *pAux;
     TProd produto[2];
     printf("Cadastro de Produtos:\n");
     for (int i = 0; i < 2; i++) {
@@ -27,11 +27,10 @@ int main(){
         printf("Entre com o valor para %s:",produto[i].titulo);
         scanf("%f",&produto[i].pVenda);        
     }
-    for (int i = 0; i < 2; i++) {
-        printf("[%d] - %s\t:\t%.2f",i+1,pAux->titulo,pAux->pVenda);
-    }
     ordProd();
-    printList();
+    for (int i = 0; i < 2; i++) {
+        printList(produto[i]);        
+    }
 }
 
 void attPreco(){
@@ -42,9 +41,6 @@ void ordProd(){
 
 }
 
-void printList(){
-    for (int i = 0; i < 2; i++) {
-
-    }
-
+void printList(TProd prod){
+        printf("[%d] - %s\t:\t%.2f.\n",i+1,prod.titulo,prod.pVenda);
 }
