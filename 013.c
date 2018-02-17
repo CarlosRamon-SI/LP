@@ -22,6 +22,9 @@ int main(){
     strcpy(registro.titulo, "Java, como programar");
     strcpy(registro.editora, "Prentice Hall");
     registro.ano = 2006;
-    strcpy(registro.autor[1], "Deitel, H.M.");
-    strcpy(registro.autor[2], "Deitel, P.J.");
-    }
+    strcpy(registro.autor[0].escritor, "Deitel, H.M.");
+    strcpy(registro.autor[1].escritor, "Deitel, P.J.");
+
+    printf("Titulo:\t\t\tAutor:\t\t\t\tEditora:\tAno Publicação:\n");
+    printf("%s\t%s;%s\t%s\t%d\n",registro.titulo,registro.autor[0].escritor,registro.autor[1].escritor,registro.editora,registro.ano);
+}
