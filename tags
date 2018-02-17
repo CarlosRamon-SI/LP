@@ -1,0 +1,171 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+001.c	001.c	1;"	F
+002.c	002.c	1;"	F
+003.c	003.c	1;"	F
+004.c	004.c	1;"	F
+005.c	005.c	1;"	F
+006.c	006.c	1;"	F
+007.c	007.c	1;"	F
+008.c	008.c	1;"	F
+009.c	009.c	1;"	F
+010.c	010.c	1;"	F
+011.c	011.c	1;"	F
+012.c	012.c	1;"	F
+013.c	013.c	1;"	F
+014.c	014.c	1;"	F
+015.c	015.c	1;"	F
+06.c	06.c	1;"	F
+09.c	09.c	1;"	F
+1007.c	1007.c	1;"	F
+1008.c	1008.c	1;"	F
+1009.c	1009.c	1;"	F
+1011.c	1011.c	1;"	F
+Ex01.c	Ex01.c	1;"	F
+Ex01_LP.c	Ex01_LP.c	1;"	F
+Ex02.c	Ex02.c	1;"	F
+Ex03.c	Ex03.c	1;"	F
+Ex03_LP.c	Ex03_LP.c	1;"	F
+Ex04.c	Ex04.c	1;"	F
+Ex04_LP.c	Ex04_LP.c	1;"	F
+Ex05.c	Ex05.c	1;"	F
+Ex05_LP.c	Ex05_LP.c	1;"	F
+Ex06_LP.c	Ex06_LP.c	1;"	F
+Ex07_LP.c	Ex07_LP.c	1;"	F
+Hello.c	Hello.c	1;"	F
+TAluno	007.c	/^typedef struct TAluno {$/;"	s	file:
+TAluno	007.c	/^} TAluno;$/;"	t	typeref:struct:TAluno	file:
+TAluno::nome	007.c	/^    char nome[15];$/;"	m	struct:TAluno	file:	access:public
+TAluno::nota	007.c	/^    int nota;$/;"	m	struct:TAluno	file:	access:public
+TAutor	013.c	/^typedef struct TAutor {$/;"	s	file:
+TAutor	013.c	/^} TAutor;$/;"	t	typeref:struct:TAutor	file:
+TAutor::escritor	013.c	/^    char escritor[15];$/;"	m	struct:TAutor	file:	access:public
+TBook	013.c	/^typedef struct TBook {$/;"	s	file:
+TBook	013.c	/^} TBook;$/;"	t	typeref:struct:TBook	file:
+TBook::ano	013.c	/^    int ano;$/;"	m	struct:TBook	file:	access:public
+TBook::autor	013.c	/^    TAutor autor[2];$/;"	m	struct:TBook	file:	access:public
+TBook::editora	013.c	/^    char editora[15];$/;"	m	struct:TBook	file:	access:public
+TBook::titulo	013.c	/^    char titulo[30];$/;"	m	struct:TBook	file:	access:public
+TProd	015.c	/^typedef struct TProd {$/;"	s	file:
+TProd	015.c	/^} TProd;$/;"	t	typeref:struct:TProd	file:
+TProd::pVenda	015.c	/^    float pVenda;$/;"	m	struct:TProd	file:	access:public
+TProd::titulo	015.c	/^    char titulo[15];$/;"	m	struct:TProd	file:	access:public
+abs	macro.h	2;"	d
+ano	013.c	/^    int ano;$/;"	m	struct:TBook	file:	access:public
+attPreco	015.c	/^void attPreco(TProd *aux);$/;"	p	file:	signature:(TProd *aux)
+attPreco	015.c	/^void attPreco(TProd *aux){$/;"	f	signature:(TProd *aux)
+autor	013.c	/^    TAutor autor[2];$/;"	m	struct:TBook	file:	access:public
+baskara.c	baskara.c	1;"	F
+baskara.h	baskara.h	1;"	F
+binario	011.c	/^int binario(int numero);$/;"	p	file:	signature:(int numero)
+binario	011.c	/^int binario(int numero){$/;"	f	signature:(int numero)
+delta	baskara.h	1;"	d
+editora	013.c	/^    char editora[15];$/;"	m	struct:TBook	file:	access:public
+escritor	013.c	/^    char escritor[15];$/;"	m	struct:TAutor	file:	access:public
+ex.c	ex.c	1;"	F
+exercicio	ex.c	/^int exercicio(int n);$/;"	p	file:	signature:(int n)
+exercicio	ex.c	/^int exercicio(int n){$/;"	f	signature:(int n)
+fatorial	fatorial.c	/^int fatorial(int n);$/;"	p	file:	signature:(int n)
+fatorial	fatorial.c	/^int fatorial(int n){$/;"	f	signature:(int n)
+fatorial.c	fatorial.c	1;"	F
+hip	006.c	/^float hip(float x, float y);$/;"	p	file:	signature:(float x, float y)
+hip	006.c	/^float hip(float x, float y){$/;"	f	signature:(float x, float y)
+lp01.c	lp01.c	1;"	F
+lp02.c	lp02.c	1;"	F
+lp03.c	lp03.c	1;"	F
+lp04.c	lp04.c	1;"	F
+lp05.c	lp05.c	1;"	F
+lp06.c	lp06.c	1;"	F
+macro.h	macro.h	1;"	F
+main	001.c	/^int main(){$/;"	f
+main	002.c	/^int main(){$/;"	f
+main	003.c	/^int main(){$/;"	f
+main	004.c	/^int main(){$/;"	f
+main	005.c	/^int main(){$/;"	f
+main	006.c	/^int main(){$/;"	f
+main	007.c	/^int main(){$/;"	f
+main	008.c	/^int main(){$/;"	f
+main	009.c	/^int main(){$/;"	f
+main	010.c	/^int main(){$/;"	f
+main	011.c	/^void main(){$/;"	f
+main	012.c	/^int main(){$/;"	f
+main	013.c	/^int main(){$/;"	f
+main	014.c	/^int main(){$/;"	f
+main	015.c	/^int main(){$/;"	f
+main	06.c	/^int main(){$/;"	f
+main	09.c	/^int main(){$/;"	f
+main	1007.c	/^int main() {$/;"	f
+main	1008.c	/^int main(){$/;"	f
+main	1009.c	/^int main(){$/;"	f
+main	1011.c	/^int main() {$/;"	f
+main	Ex01.c	/^int main(){$/;"	f
+main	Ex01_LP.c	/^int main(int argc, char **argv) {$/;"	f	signature:(int argc, char **argv)
+main	Ex02.c	/^int main(){$/;"	f
+main	Ex03.c	/^int main(){$/;"	f
+main	Ex03_LP.c	/^int main() {$/;"	f
+main	Ex04.c	/^int main(){$/;"	f
+main	Ex04_LP.c	/^int main(int argc, char **argv){$/;"	f	signature:(int argc, char **argv)
+main	Ex05.c	/^int main(){$/;"	f
+main	Ex05_LP.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	Ex06_LP.c	/^int main(){$/;"	f
+main	Ex07_LP.c	/^int main(){$/;"	f
+main	Hello.c	/^int main(){$/;"	f
+main	baskara.c	/^int main(){$/;"	f
+main	ex.c	/^int main(){$/;"	f
+main	fatorial.c	/^int main(){$/;"	f
+main	lp01.c	/^int main(){$/;"	f
+main	lp02.c	/^int main(){$/;"	f
+main	lp03.c	/^int main(){$/;"	f
+main	lp04.c	/^int main(){$/;"	f
+main	lp05.c	/^int main(){$/;"	f
+main	lp06.c	/^int main(){$/;"	f
+main	matrix.c	/^int main(){$/;"	f
+main	nothing_box.c	/^void main(){$/;"	f
+main	potencia.c	/^int main(){$/;"	f
+main	string.c	/^int main(){$/;"	f
+main	string2.c	/^int main(){$/;"	f
+main	string3.c	/^int main(){$/;"	f
+main	vetor.c	/^int main(){$/;"	f
+master*.c	master*.c	1;"	F
+matrix.c	matrix.c	1;"	F
+max	macro.h	3;"	d
+nome	007.c	/^    char nome[15];$/;"	m	struct:TAluno	file:	access:public
+normalPrint	014.c	/^void normalPrint(char frase[50]);$/;"	p	file:	signature:(char frase[50])
+normalPrint	014.c	/^void normalPrint(char frase[50]){$/;"	f	signature:(char frase[50])
+nota	007.c	/^    int nota;$/;"	m	struct:TAluno	file:	access:public
+nothing_box.c	nothing_box.c	1;"	F
+ordProd	015.c	/^void ordProd(TProd *aux){$/;"	f	signature:(TProd *aux)
+ordProd	015.c	/^void ordProd(TProd aux);$/;"	p	file:	signature:(TProd aux)
+pVenda	015.c	/^    float pVenda;$/;"	m	struct:TProd	file:	access:public
+pdto	012.c	/^int pdto(int a,int b);$/;"	p	file:	signature:(int a,int b)
+pdto	012.c	/^int pdto(int a,int b){$/;"	f	signature:(int a,int b)
+pot	003.c	/^int pot(int x, int n);$/;"	p	file:	signature:(int x, int n)
+pot	003.c	/^int pot(int x, int n){$/;"	f	signature:(int x, int n)
+pot	004.c	/^int pot(int x, int n);$/;"	p	file:	signature:(int x, int n)
+pot	004.c	/^int pot(int x, int n){$/;"	f	signature:(int x, int n)
+pot	Ex03.c	/^int pot(int a,int b);$/;"	p	file:	signature:(int a,int b)
+pot	Ex03.c	/^int pot(int a,int b){$/;"	f	signature:(int a,int b)
+pot	Ex04.c	/^int pot(int a,int b);$/;"	p	file:	signature:(int a,int b)
+pot	Ex04.c	/^int pot(int a,int b){$/;"	f	signature:(int a,int b)
+potencia	potencia.c	/^int potencia(int base,int expo);$/;"	p	file:	signature:(int base,int expo)
+potencia	potencia.c	/^int potencia(int base,int expo){$/;"	f	signature:(int base,int expo)
+potencia.c	potencia.c	1;"	F
+printList	015.c	/^void printList();$/;"	p	file:
+printList	015.c	/^void printList(){$/;"	f
+quad	macro.h	1;"	d
+raiz1	baskara.h	2;"	d
+raiz2	baskara.h	3;"	d
+reversePrint	014.c	/^void reversePrint(char frase[50]);$/;"	p	file:	signature:(char frase[50])
+reversePrint	014.c	/^void reversePrint(char frase[50]){$/;"	f	signature:(char frase[50])
+strcmp	string3.c	/^int strcmp(char s[], char t[]);$/;"	p	file:	signature:(char s[], char t[])
+strcmp	string3.c	/^int strcmp(char s[], char t[]){$/;"	f	signature:(char s[], char t[])
+string.c	string.c	1;"	F
+string2.c	string2.c	1;"	F
+string3.c	string3.c	1;"	F
+titulo	013.c	/^    char titulo[30];$/;"	m	struct:TBook	file:	access:public
+titulo	015.c	/^    char titulo[15];$/;"	m	struct:TProd	file:	access:public
+vetor.c	vetor.c	1;"	F

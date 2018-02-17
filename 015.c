@@ -13,33 +13,38 @@ typedef struct TProd {
     float pVenda;
 } TProd;
 
-void attPreco(TProd *aux);
-void ordProd(TProd aux);
+void attPreco();
+void ordProd();
 void printList();
 
 int main(){
+    TProd *pAux;
     TProd produto[2];
     printf("Cadastro de Produtos:\n");
-    for (int i = 0; i < 20; i++) {
-        printf("Entre com o nome do produto: ");
+    for (int i = 0; i < 2; i++) {
+        printf("Entre com o nome do produto [%d]: ",i+1);
         scanf(" %[^\n]s",produto[i].titulo);
         printf("Entre com o valor para %s:",produto[i].titulo);
         scanf("%f",&produto[i].pVenda);        
     }
-    ordProd(produto);
+    for (int i = 0; i < 2; i++) {
+        printf("[%d] - %s\t:\t%.2f",i+1,pAux->titulo,pAux->pVenda);
+    }
+    ordProd();
+    printList();
 }
 
-void attPreco(TProd *aux){
+void attPreco(){
 
 }
 
-void ordProd(TProd *aux){
+void ordProd(){
 
 }
 
 void printList(){
     for (int i = 0; i < 2; i++) {
-        printf("%s\t:\t%.2f",produto[i].titulo,produto[i].pVenda);
+
     }
 
 }
