@@ -7,7 +7,8 @@
 //          • Fim
 //      Cada entrada da agenda deve ter os seguintes campos:
 //          char nome[30];
-//          char endereco[100]; char fone[10];
+//          char endereco[100]; 
+//          char fone[10];
 //          long int CEP;
 // Obs.: a agenda deve ter capacidade para 100 entradas.
 
@@ -16,9 +17,29 @@
 
 #define MAX 100
 
+typedef struct TCadastro{
+    int codigo;
+    char nome[30];
+    char endereco[100];
+    char fone[10];
+    long int CEP;
+}TCadastro;
+
+void insert(TCadastro *novo,int indice);
+void find(TCadastro *seek);
+void list(TCadastro *listar);
+int verCod();
+
 int main(){
-    char resp=0;
-    while((resp == 0) || (resp < 0) || (resp > 4)){
+
+    int resp=0,menu=1,ver = 0;
+    TCadastro contato[MAX];
+
+    for (int i = 0; i < MAX; i++) {
+        contato[i].codigo=-1;        
+    }
+
+    while(menu != 0){
         printf("/* ----------  MENU PRINCIPAL ---------- */\n");
         printf("\n");
         printf("[1] - Inserir Nova Contato\t\t;\n");
@@ -29,6 +50,79 @@ int main(){
         printf("\n");
         printf("Escolha uma opção: ");
         scanf("%d",&resp);
+        switch (resp) {
+            case 1:
+                ver = verCod(contato);
+                if (ver = -1) {
+                    printf("Agenda Lotada.\n");
+                } else {
+                    insert(contato,ver);
+                }
+                break;
+            case 2:
+                find(contato);
+                break;
+            case 3:
+                list(contato);
+                break;
+            case 4:
+                menu = 0;
+                break;
+            default:
+                printf("Opção Inválida. Tente novamente.\n");
+        }
 }
 }
 
+void insert(TCadastro *novo,int indice){
+    int j = 0;
+        novo[indice].codigo = indice;
+        printf("Nome para o novo contato: ");
+        scanf(" %[^\n]s",novo[indice].nome);
+        printf("Telefone: ");
+        scanf(" %[^\n]s",novo[indice].fone);
+        printf("Endereço: ");
+        scanf(" %[^\n]s",novo[indice].endereco);
+        printf("CEP: ");
+        scanf(" %li",&novo[indice].CEP);
+    for (int k = 0; k < MAX; k++) {
+        while(novo[k].nome[j]!='\0'){
+            j++;
+        }
+        for (int l = 0; l < j; l++) {
+            if (novo[indice].nome[k]>=97) {
+                novo[indice].nome[k]-=32;
+            }
+        }
+        
+    }
+}
+
+void find(TCadastro *seek){
+    printf("Find Command.\n");
+}
+
+void list(TCadastro *listar){
+    char verif;
+    printf("Digite uma letra INICIAL: ");
+    scanf(" %c",&verif);
+    if (verif >= 97) {
+        verif -= 32;
+    }
+    for (int i = 0; i < MAX; i++) {
+        if (listar[i].nome[0] == verif) {
+            printf("%d- %s: %s, ",listar[i].codigo,listar[i].nome,listar[i].fone);
+            printf("%s, %li.\n",listar[i].endereco,listar[i].CEP);
+        }
+    }
+    printf("List Command.\n");
+}
+
+int verCod(TCadastro *check){
+    for (int i = 0; i < MAX; i++) {
+        if (check[i].codigo != -1) {
+            return i;
+        }
+    }
+    return -1;
+}
