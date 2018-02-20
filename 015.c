@@ -38,7 +38,7 @@ int main(){
 void attPreco(TProd *aux){
     for (int i = 0; i < MAX; i++) {
         if (aux[i].pVenda <= 100) {
-            aux[i].pVenda += (aux[i].pVenda * 0.05);
+            aux[i].pVenda *= 1.05;
         }
     }
 }
