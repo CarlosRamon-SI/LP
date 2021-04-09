@@ -1,5 +1,6 @@
 " ==================================================================================
 " git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" vim +PluginInstall +qall
 " ==================================================================================
 
 " this is to receive CTRL-S and CTRL-Q
@@ -22,7 +23,7 @@ Plugin 'tpope/vim-fugitive'
 " plugins to enable snippets support
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
+"Plugin 'garbas/vim-snipmate' --> deprecated
 Plugin 'honza/vim-snippets'
 
 " enable NERD tree - allows you to explore your filesystem 
@@ -50,7 +51,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'jlanzarotta/bufexplorer'
 
 "enable GDB integration
-Plugin 'vim-scripts/Conque-GDB'
+"Plugin 'vim-scripts/Conque-GDB' --> python funcion deprecated
 
 Plugin 'vim-airline/vim-airline'
 
