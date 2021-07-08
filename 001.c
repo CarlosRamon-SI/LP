@@ -12,4 +12,6 @@ int main(){
         a -= b;
     }
     printf("Os valores ordenados são %d e %d.\n",a,b);
+
+    // minha alteração 
 }
