@@ -14,7 +14,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" plugin to enable Vundle 
+" plugin to enable Vundle
 Plugin 'VundleVim/Vundle.vim'
 
 " plugin to enable git integration
@@ -26,11 +26,11 @@ Plugin 'tomtom/tlib_vim'
 "Plugin 'garbas/vim-snipmate' --> deprecated
 Plugin 'honza/vim-snippets'
 
-" enable NERD tree - allows you to explore your filesystem 
+" enable NERD tree - allows you to explore your filesystem
 " and to open files and directories.
 Plugin 'scrooloose/nerdtree.git'
 
-" enable CTRLP - Full path fuzzy file, buffer, mru, tag, 
+" enable CTRLP - Full path fuzzy file, buffer, mru, tag,
 " etc, finder for Vim
 Plugin 'kien/ctrlp.vim'
 
@@ -54,6 +54,20 @@ Plugin 'jlanzarotta/bufexplorer'
 "Plugin 'vim-scripts/Conque-GDB' --> python funcion deprecated
 
 Plugin 'vim-airline/vim-airline'
+let g:airline_powerline_fonts = 1
+" powerline symbols
+let g:airline_symbols = {}
+"let g:airline_left_sep = ''
+"let g:airline_left_alt_sep = ''
+"let g:airline_right_sep = ''
+"let g:airline_right_alt_sep = ''
+"let g:airline_symbols.branch = ''
+"let g:airline_symbols.colnr = ' :'
+"let g:airline_symbols.readonly = ''
+"let g:airline_symbols.linenr = ' :'
+let g:airline_symbols.maxlinenr = '  '
+let g:airline_symbols.whitespace = 'Ξ'
+"let g:airline_symbols.dirty='⚡ '
 
 Plugin 'marcopaganini/termschool-vim-theme'
 
@@ -95,7 +109,7 @@ set textwidth=120
 " show column number
 set ruler
 
-" ======================================================== 
+" ========================================================
 "                   colorscheme
 " ========================================================
 "
@@ -174,17 +188,17 @@ function! MyPrev()
 endfunction
 
 " OmniCppComplete options
-let OmniCpp_NamespaceSearch = 1      
-let OmniCpp_GlobalScopeSearch = 1      
-let OmniCpp_ShowAccess = 1      
+let OmniCpp_NamespaceSearch = 1
+let OmniCpp_GlobalScopeSearch = 1
+let OmniCpp_ShowAccess = 1
 let OmniCpp_ShowPrototypeInAbbr = 1
-let OmniCpp_MayCompleteDot = 1      
-let OmniCpp_MayCompleteArrow = 1      
-let OmniCpp_MayCompleteScope = 1      
+let OmniCpp_MayCompleteDot = 1
+let OmniCpp_MayCompleteArrow = 1
+let OmniCpp_MayCompleteScope = 1
 let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 
-" automatically open and close the popup menu / preview window      
-au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif      
+" automatically open and close the popup menu / preview window
+au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 set completeopt=menuone,menu,longest,preview
 
 " cscope
@@ -278,7 +292,7 @@ nnoremap H <ESC>:call MyPrev()<CR>
 " (CTRL-O) open nerd tree
 nnoremap <C-o> <ESC>:NERDTreeToggle<CR>
 
-" (CTRL_A, CTRL-I) change to *.C/*.H file 
+" (CTRL_A, CTRL-I) change to *.C/*.H file
 nnoremap <C-a> <ESC>:A<CR>
 nnoremap <C-i> <ESC>:IH<CR>
 
@@ -286,7 +300,7 @@ nnoremap <C-i> <ESC>:IH<CR>
 nnoremap <C-p> <ESC>:pop<CR>
 
 " (CTRL-W ]) Open tag under cursor in new tab
-nnoremap <C-W>] <C-W>]:tab split<CR>gT:q<CR>gt 
+nnoremap <C-W>] <C-W>]:tab split<CR>gT:q<CR>gt
 
 " default command to invoke CtrlP:
 let g:ctrlp_map = '<c-f>'
